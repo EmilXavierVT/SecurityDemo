@@ -1,0 +1,22 @@
+###
+GET http://localhost:7070/api/msg/hello
+###
+POST http://localhost:7070/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "fromRest",
+  "password" : "pass123"
+}
+###
+POST http://localhost:7070/api/auth/login
+Content-Type: application/json
+
+{
+  "username" : "fromRest",
+  "password" : "pass123"
+}
+
+###
+GET http://localhost:7070/api/auth/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIlRob21hcyBIYXJ0bWFublwiIiwic3ViIjoiZnJvbVJlc3QiLCJleHAiOjE3NzM5MjA0MDcsInJvbGVzIjoidXNlciIsInVzZXJuYW1lIjoiZnJvbVJlc3QifQ.1rdzKavWMfz9voFAE1eJvkC61zqz96GiRtFPQyqxjGI
