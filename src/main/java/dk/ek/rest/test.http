@@ -1,7 +1,7 @@
 ###
-GET http://localhost:7070/api/msg/hello
+GET http://localhost:7700/api/msg/hello
 ###
-POST http://localhost:7070/api/auth/register
+POST http://localhost:7700/api/auth/register
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
   "password" : "pass123"
 }
 ###
-POST http://localhost:7070/api/auth/login
+POST http://localhost:7700/api/auth/login
 Content-Type: application/json
 
 {
@@ -18,5 +18,5 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:7070/api/auth/protected
+GET http://localhost:7700/api/auth/protected
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIlRob21hcyBIYXJ0bWFublwiIiwic3ViIjoiZnJvbVJlc3QiLCJleHAiOjE3NzM5MjA0MDcsInJvbGVzIjoidXNlciIsInVzZXJuYW1lIjoiZnJvbVJlc3QifQ.1rdzKavWMfz9voFAE1eJvkC61zqz96GiRtFPQyqxjGI
